@@ -1,0 +1,16 @@
+****Sudoku Solver*****
+a. A solution to a Sudoku puzzle is a 9x9 grid where each row, column, and 3x3 subgrid contains all the numbers from 1 to 9 exactly once. This means that in order for the puzzle to be solved, every number from 1 to 9 must be present in each row, column, and subgrid of the grid exactly once. This ensures that there is only one valid solution to the puzzle.
+
+b. The restriction of the problem is that no number can be repeated in the same row, column, or 3x3 subgrid. This means that each cell in the grid can only contain one number and that each number can only appear once in each row, column, and subgrid. This restriction is what makes solving the puzzle challenging and ensures that there is only one valid solution.
+
+c. In Sudoku, a state refers to the current configuration of the partially filled grid. This includes both the cells that have already been filled with a number and those that are still empty. The search algorithm needs to keep track of the current state of the grid in order to make decisions about which numbers to try in each empty cell.
+
+d. The initial state is an empty grid with all cells set to 0 or blank. This is the starting point for the search algorithm and represents the beginning of the puzzle-solving process. The search algorithm will then try different numbers in different cells until it finds a solution.
+
+e. The possible actions in Sudoku are to assign a number from 1 to 9 to an empty cell in the grid. This is because the search algorithm needs to try different numbers in each empty cell to find a solution. Each number can only be assigned once per row, column, and subgrid, so the algorithm must try different numbers until it finds one that fits.
+
+f. The maximum branching factor of the search tree is 9, which is the maximum number of possible values that can be assigned to a cell. This means that in each empty cell, there are 9 possible values that can be assigned, so the search algorithm must explore each of these possibilities until it finds a solution.
+
+g. The maximum depth of the search tree is 81, which is the total number of cells in the grid. This means that in the worst-case scenario, the search algorithm must explore each cell in the grid and try all possible values until it finds a solution. The depth of the search tree can be reduced through the use of heuristics and other optimization techniques, but it is still a significant factor in the puzzle-solving process.
+
+
